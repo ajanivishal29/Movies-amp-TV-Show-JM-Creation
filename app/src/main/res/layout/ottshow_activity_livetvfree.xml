@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorlight"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/topads"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <include
+                        android:id="@+id/ad"
+                        layout="@layout/ottshow_activity_main_nativeads"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/guide1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="65dp"
+                        android:layout_marginBottom="10dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/onlinetv_guide1" />
+
+                    <ImageView
+                        android:id="@+id/guide2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="65dp"
+                        android:layout_marginBottom="10dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/onlinetv_guide2" />
+
+                    <ImageView
+                        android:id="@+id/guide3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="65dp"
+                        android:layout_marginBottom="10dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/onlinetv_guide3" />
+
+                    <ImageView
+                        android:id="@+id/guide4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="65dp"
+                        android:layout_marginBottom="10dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/onlinetv_guide4" />
+
+                    <ImageView
+                        android:id="@+id/guide5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="65dp"
+                        android:layout_marginBottom="10dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/onlinetv_guide5" />
+
+                    <ImageView
+                        android:id="@+id/guide6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="65dp"
+                        android:layout_marginBottom="10dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/onlinetv_guide6" />
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/topads"
+        layout="@layout/ottshow_activity_main_smallnativeads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

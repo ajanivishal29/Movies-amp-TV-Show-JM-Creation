@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorlight">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/onlinetv_backs" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/tondo_bold"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Categories"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top"
+        android:layout_above="@+id/topads">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/ad_back"
+                                android:orientation="vertical"
+                                android:padding="3dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:id="@+id/txtLatest"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="170dp"
+                                            android:layout_height="100dp"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginTop="1dp"
+                                            android:layout_marginRight="1dp"
+                                            android:layout_marginBottom="1dp"
+                                            app:cardBackgroundColor="@color/whitedark"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="1dp">
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:gravity="center">
+
+                                                <ImageView
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:src="@drawable/onlinetv_itrending"
+                                                    android:tint="@color/lightofcolor"
+                                                    android:visibility="visible" />
+                                            </RelativeLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="5dp"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:gravity="center"
+                                                android:orientation="vertical"
+                                                android:weightSum="5">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginLeft="8dp"
+                                                    android:layout_marginRight="5dp"
+                                                    android:layout_weight="2"
+                                                    android:gravity="center_vertical"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:gravity="center_vertical"
+                                                        android:maxLines="1"
+                                                        android:text="@string/latesttrend"
+                                                        android:textColor="@color/white"
+                                                        android:textSize="14sp" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:layout_marginTop="5dp"
+                                                        android:ellipsize="end"
+                                                        android:gravity="center_vertical"
+                                                        android:lines="1"
+                                                        android:maxLines="1"
+                                                        android:text="Discover the top, most popular movies available now! Across theaters, streaming, and on-demand, these are the movies"
+                                                        android:textColor="@color/white"
+                                                        android:textSize="10sp" />
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginLeft="3dp"
+                                                    android:layout_weight="3"
+                                                    android:orientation="vertical">
+
+                                                    <androidx.appcompat.widget.AppCompatButton
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="33dp"
+                                                        android:layout_gravity="center"
+                                                        android:layout_marginLeft="5dp"
+                                                        android:layout_marginTop="5dp"
+                                                        android:layout_marginRight="5dp"
+                                                        android:layout_marginBottom="5dp"
+                                                        android:background="@drawable/onlinetv_instgradient"
+                                                        android:clickable="false"
+                                                        android:gravity="center"
+                                                        android:text="More Show"
+                                                        android:textColor="@color/white"
+                                                        android:textSize="12sp" />
+                                                </LinearLayout>
+                                            </LinearLayout>
+                                        </RelativeLayout>
+                                    </LinearLayout>
+                                </RelativeLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/ad_back"
+                                android:orientation="vertical"
+                                android:padding="3dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:id="@+id/txtPopularMovie"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="170dp"
+                                            android:layout_height="100dp"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginTop="1dp"
+                                            android:layout_marginRight="1dp"
+                                            android:layout_marginBottom="1dp"
+                                            app:cardBackgroundColor="@color/lightofcolor"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="1dp">
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:gravity="center">
+
+                                                <ImageView
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:src="@drawable/onlinetv_ipopular"
+                                                    android:tint="@color/whitedark"
+                                                    android:visibility="visible" />
+                                            </RelativeLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="5dp"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:gravity="center"
+                                                android:orientation="vertical"
+                                                android:weightSum="5">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginLeft="8dp"
+                                                    android:layout_marginRight="5dp"
+                                                    android:layout_weight="2"
+                                                    android:gravity="center_vertical"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:gravity="center_vertical"
+                                                        android:maxLines="1"
+                                                        android:text="@string/popular"
+                                                        android:textColor="@color/white"
+                                                        android:textSize="14sp" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:layout_marginTop="5dp"
+                                                        android:ellipsize="end"
+                                                        android:gravity="center_vertical"
+                                                        android:lines="1"
+                                                        android:maxLines="1"
+                                                        android:text="If you wish to watch a movie, you simply open one of these platforms on your desktop or mobile "
+                                                        android:textColor="@color/white"
+                                                        android:textSize="10sp" />
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginLeft="3dp"
+                                                    android:layout_weight="3"
+                                                    android:orientation="vertical">
+
+                                                    <androidx.appcompat.widget.AppCompatButton
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="33dp"
+                                                        android:layout_gravity="center"
+                                                        android:layout_marginLeft="5dp"
+                                                        android:layout_marginTop="5dp"
+                                                        android:layout_marginRight="5dp"
+                                                        android:layout_marginBottom="5dp"
+                                                        android:background="@drawable/onlinetv_instgradient"
+                                                        android:clickable="false"
+                                                        android:gravity="center"
+                                                        android:text="Open Now"
+                                                        android:textColor="@color/white"
+                                                        android:textSize="12sp" />
+                                                </LinearLayout>
+                                            </LinearLayout>
+                                        </RelativeLayout>
+                                    </LinearLayout>
+                                </RelativeLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/ad_back"
+                                android:orientation="vertical"
+                                android:padding="3dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:id="@+id/txtTVshow"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="170dp"
+                                            android:layout_height="100dp"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginTop="1dp"
+                                            android:layout_marginRight="1dp"
+                                            android:layout_marginBottom="1dp"
+                                            app:cardBackgroundColor="@color/whitedark"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="1dp">
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:gravity="center">
+
+                                                <ImageView
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:src="@drawable/onlinetv_itv"
+                                                    android:tint="@color/lightofcolor"
+                                                    android:visibility="visible" />
+                                            </RelativeLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="5dp"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:gravity="center"
+                                                android:orientation="vertical"
+                                                android:weightSum="5">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginLeft="8dp"
+                                                    android:layout_marginRight="5dp"
+                                                    android:layout_weight="2"
+                                                    android:gravity="center_vertical"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:gravity="center_vertical"
+                                                        android:maxLines="1"
+                                                        android:text="@string/poptv"
+                                                        android:textColor="@color/white"
+                                                        android:textSize="14sp" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:layout_marginTop="5dp"
+                                                        android:ellipsize="end"
+                                                        android:gravity="center_vertical"
+                                                        android:lines="1"
+                                                        android:maxLines="1"
+                                                        android:text="MOST POPULAR TV SHOWS RIGHT NOW: TOP SERIES EVERYONE’S WATCHING"
+                                                        android:textColor="@color/white"
+                                                        android:textSize="10sp" />
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginLeft="3dp"
+                                                    android:layout_weight="3"
+                                                    android:orientation="vertical">
+
+                                                    <androidx.appcompat.widget.AppCompatButton
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="33dp"
+                                                        android:layout_gravity="center"
+                                                        android:layout_marginLeft="5dp"
+                                                        android:layout_marginTop="5dp"
+                                                        android:layout_marginRight="5dp"
+                                                        android:layout_marginBottom="5dp"
+                                                        android:background="@drawable/onlinetv_instgradient"
+                                                        android:clickable="false"
+                                                        android:gravity="center"
+                                                        android:text="More Show"
+                                                        android:textColor="@color/white"
+                                                        android:textSize="12sp" />
+                                                </LinearLayout>
+                                            </LinearLayout>
+                                        </RelativeLayout>
+                                    </LinearLayout>
+                                </RelativeLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <include
+                            android:id="@+id/ad"
+                            layout="@layout/ottshow_activity_main_nativeads"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/ad_back"
+                                android:orientation="vertical"
+                                android:padding="3dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:id="@+id/txtAction"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="170dp"
+                                            android:layout_height="100dp"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginTop="1dp"
+                                            android:layout_marginRight="1dp"
+                                            android:layout_marginBottom="1dp"
+                                            app:cardBackgroundColor="@color/lightofcolor"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="1dp">
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:gravity="center">
+
+                                                <ImageView
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:src="@drawable/onlinetv_iaction"
+                                                    android:tint="@color/whitedark"
+                                                    android:visibility="visible" />
+                                            </RelativeLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="5dp"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:gravity="center"
+                                                android:orientation="vertical"
+                                                android:weightSum="5">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginLeft="8dp"
+                                                    android:layout_marginRight="5dp"
+                                                    android:layout_weight="2"
+                                                    android:gravity="center_vertical"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:gravity="center_vertical"
+                                                        android:maxLines="1"
+                                                        android:text="@string/popaction"
+                                                        android:textColor="@color/white"
+                                                        android:textSize="14sp" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:layout_marginTop="5dp"
+                                                        android:ellipsize="end"
+                                                        android:gravity="center_vertical"
+                                                        android:lines="1"
+                                                        android:maxLines="1"
+                                                        android:text="Action movies get a bad rap. Not from the general public, of course"
+                                                        android:textColor="@color/white"
+                                                        android:textSize="10sp" />
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginLeft="3dp"
+                                                    android:layout_weight="3"
+                                                    android:orientation="vertical">
+
+                                                    <androidx.appcompat.widget.AppCompatButton
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="33dp"
+                                                        android:layout_gravity="center"
+                                                        android:layout_marginLeft="5dp"
+                                                        android:layout_marginTop="5dp"
+                                                        android:layout_marginRight="5dp"
+                                                        android:layout_marginBottom="5dp"
+                                                        android:background="@drawable/onlinetv_instgradient"
+                                                        android:clickable="false"
+                                                        android:gravity="center"
+                                                        android:text="Open Now"
+                                                        android:textColor="@color/white"
+                                                        android:textSize="12sp" />
+                                                </LinearLayout>
+                                            </LinearLayout>
+                                        </RelativeLayout>
+                                    </LinearLayout>
+                                </RelativeLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/ad_back"
+                                android:orientation="vertical"
+                                android:padding="3dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:id="@+id/txtKids"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="170dp"
+                                            android:layout_height="100dp"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginTop="1dp"
+                                            android:layout_marginRight="1dp"
+                                            android:layout_marginBottom="1dp"
+                                            app:cardBackgroundColor="@color/whitedark"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="1dp">
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:gravity="center">
+
+                                                <ImageView
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:src="@drawable/onlinetv_ikids"
+                                                    android:tint="@color/lightofcolor"
+                                                    android:visibility="visible" />
+                                            </RelativeLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="5dp"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:gravity="center"
+                                                android:orientation="vertical"
+                                                android:weightSum="5">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginLeft="8dp"
+                                                    android:layout_marginRight="5dp"
+                                                    android:layout_weight="2"
+                                                    android:gravity="center_vertical"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:gravity="center_vertical"
+                                                        android:maxLines="1"
+                                                        android:text="@string/bestofkids"
+                                                        android:textColor="@color/white"
+                                                        android:textSize="14sp" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:layout_marginTop="5dp"
+                                                        android:ellipsize="end"
+                                                        android:gravity="center_vertical"
+                                                        android:lines="1"
+                                                        android:maxLines="1"
+                                                        android:text="Best Kids&apos; TV Shows and Family Series of All Time"
+                                                        android:textColor="@color/white"
+                                                        android:textSize="10sp" />
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginLeft="3dp"
+                                                    android:layout_weight="3"
+                                                    android:orientation="vertical">
+
+                                                    <androidx.appcompat.widget.AppCompatButton
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="33dp"
+                                                        android:layout_gravity="center"
+                                                        android:layout_marginLeft="5dp"
+                                                        android:layout_marginTop="5dp"
+                                                        android:layout_marginRight="5dp"
+                                                        android:layout_marginBottom="5dp"
+                                                        android:background="@drawable/onlinetv_instgradient"
+                                                        android:clickable="false"
+                                                        android:gravity="center"
+                                                        android:text="More Show"
+                                                        android:textColor="@color/white"
+                                                        android:textSize="12sp" />
+                                                </LinearLayout>
+                                            </LinearLayout>
+                                        </RelativeLayout>
+                                    </LinearLayout>
+                                </RelativeLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/ad_back"
+                                android:orientation="vertical"
+                                android:padding="3dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <LinearLayout
+                                        android:id="@+id/txtFriends"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_width="170dp"
+                                            android:layout_height="100dp"
+                                            android:layout_marginLeft="5dp"
+                                            android:layout_marginTop="1dp"
+                                            android:layout_marginRight="1dp"
+                                            android:layout_marginBottom="1dp"
+                                            app:cardBackgroundColor="@color/lightofcolor"
+                                            app:cardCornerRadius="5dp"
+                                            app:cardElevation="1dp">
+
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:gravity="center">
+
+                                                <ImageView
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="50dp"
+                                                    android:src="@drawable/onlinetv_ifriends"
+                                                    android:tint="@color/whitedark"
+                                                    android:visibility="visible" />
+                                            </RelativeLayout>
+                                        </androidx.cardview.widget.CardView>
+
+                                        <RelativeLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="5dp"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:gravity="center"
+                                                android:orientation="vertical"
+                                                android:weightSum="5">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginLeft="8dp"
+                                                    android:layout_marginRight="5dp"
+                                                    android:layout_weight="2"
+                                                    android:gravity="center_vertical"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:gravity="center_vertical"
+                                                        android:maxLines="1"
+                                                        android:text="@string/bestfriend"
+                                                        android:textColor="@color/white"
+                                                        android:textSize="14sp" />
+
+                                                    <TextView
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="center"
+                                                        android:layout_marginTop="5dp"
+                                                        android:ellipsize="end"
+                                                        android:gravity="center_vertical"
+                                                        android:lines="1"
+                                                        android:maxLines="1"
+                                                        android:text="It doesn&apos;t matter how many times we watch Friends, because some of these Easter eggs are so small they&apos;re almost impossible to catch."
+                                                        android:textColor="@color/white"
+                                                        android:textSize="10sp" />
+                                                </LinearLayout>
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginLeft="3dp"
+                                                    android:layout_weight="3"
+                                                    android:orientation="vertical">
+
+                                                    <androidx.appcompat.widget.AppCompatButton
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="33dp"
+                                                        android:layout_gravity="center"
+                                                        android:layout_marginLeft="5dp"
+                                                        android:layout_marginTop="5dp"
+                                                        android:layout_marginRight="5dp"
+                                                        android:layout_marginBottom="5dp"
+                                                        android:background="@drawable/onlinetv_instgradient"
+                                                        android:clickable="false"
+                                                        android:gravity="center"
+                                                        android:text="Open Now"
+                                                        android:textColor="@color/white"
+                                                        android:textSize="12sp" />
+                                                </LinearLayout>
+                                            </LinearLayout>
+                                        </RelativeLayout>
+                                    </LinearLayout>
+                                </RelativeLayout>
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/ad1"
+                    layout="@layout/ottshow_activity_main_nativeads1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/topads"
+        layout="@layout/ottshow_activity_main_smallnativeads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.showott.watchmovies">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name="com.showott.watchmovies.Main_Ads.ottshowtv_App"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/icon512"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon512"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LiveTVGuide"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <activity
+            android:name="com.showott.watchmovies.Main_Ads.ottshowtv_Splace_Activity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.showott.watchmovies.Main_Ads.admob_ads.ottshowtv_Privacy_PolicyActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.showott.watchmovies.Main_Ads.ottshowtv_SkipActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.showott.watchmovies.splash_exit.Activity.ottshowtv_ThankYouActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.showott.watchmovies.splash_exit.Activity.ottshowtv_FirstActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.showott.watchmovies.splash_exit.Activity.ottshowtv_BackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.showott.watchmovies.ottshowtv_AllTvLiveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.showott.watchmovies.ottshowtv_CommanDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.showott.watchmovies.ottshowtv_GuideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.showott.watchmovies.ottshowtv_MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.showott.watchmovies.ottshowtv_LiveTvActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.showott.watchmovies.ottshowtv_LiveTvFreeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.showott.watchmovies.ottshowtv_TvChannelsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.showott.watchmovies.appui.onlinetv_MainHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.showott.watchmovies.appui.onlinetv_Categorie1Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.showott.watchmovies.appui.onlinetv_VideoDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.showott.watchmovies.appui.youtube.onlinetv_YoutubePlayerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.showott.watchmovies.appui.onlinetv_Categorie2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.showott.watchmovies.appui.onlinetv_Categorie3Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.showott.watchmovies.appui.onlinetv_Categorie4Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.showott.watchmovies.appui.onlinetv_Categorie5Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.showott.watchmovies.appui.onlinetv_Categorie6Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.showott.watchmovies.appui.onlinetv_MainCategoriesActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+    </application>
+
+</manifest>

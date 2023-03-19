@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorlight">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/onlinetv_backs" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/tondo_bold"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/topads"
+        android:layout_below="@+id/top">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <LinearLayout
+                        android:layout_width="175dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="170dp"
+                            android:layout_height="220dp"
+                            app:cardBackgroundColor="@color/colorlightdark"
+                            app:cardCornerRadius="8dp"
+                            app:cardElevation="3dp"
+                            app:cardUseCompatPadding="true">
+
+                            <RelativeLayout
+                                android:id="@+id/ott_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/img"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/onlinetv_d1" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_above="@+id/dbot">
+
+                            <androidx.core.widget.NestedScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:paddingRight="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txtdesc"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/tondo_bold"
+                                        android:text="Laxmii is a 2020 Indian Hindi-language horror comedy action film written and directed by Raghava Lawrence, marking his directorial debut in the Hindi film industry. A remake of his own Tamil film Kanchana (2011), it stars Akshay Kumar and Kiara Advani, whilst Ayesha Raza Mishra, Rajesh Sharma, Ashwini Kalsekar and Sharad Kelkar play pivotal roles. The film revolves around a man who gets possessed by the ghost of a transgender person. Kumar, also produced the film under his Cape of Good Films and Fox Star Studios, along with Tusshar Kapoor&apos;s newly launched production company,[2] Tusshar Entertainment House and Shabinaa Entertainment. Lawrence co-wrote the script along with Farhad Samji, Sparsh Khetarpal, Tasha Bhambra, with Samji adapting the screenplay and dialogues to the Hindi version.[3] The film was announced in January 2019, whilst the principal photography began in April 2019 and ended in March 2020."
+                                        android:textColor="@color/whitedark"
+                                        android:textSize="12dp" />
+                                </LinearLayout>
+                            </androidx.core.widget.NestedScrollView>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/dbot"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center">
+
+                            <RelativeLayout
+                                android:id="@+id/watch"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/onlinetv_btnwatch"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/bold_roboto"
+                                    android:gravity="center"
+                                    android:text="WATCH NOW"
+                                    android:textColor="@color/white"
+                                    android:textSize="15dp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/ad"
+                    layout="@layout/ottshow_activity_main_nativeads"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/topads"
+        layout="@layout/ottshow_activity_main_smallnativeads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

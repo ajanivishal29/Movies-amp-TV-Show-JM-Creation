@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FF9D1F</color>
+    <color name="purple_500">#FF9D1F</color>
+    <color name="purple_700">#FF9D1F</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="appdesigncolor">#00c180</color>
+    <color name="appdesigncolor1">#ff5d02</color>
+    <color name="yellow">#FF9D1F</color>
+    <color name="yellow_trans">#1a1100</color>
+    <color name="main_color">#FF9D1F</color>
+
+    <color name="colorlight">#061227</color>
+    <color name="colorlightdark">#061227</color>
+    <color name="whitedark">#e5e5e5</color>
+    <color name="lightofcolor">#9d505967</color>
+    <color name="primarymain">#FF9D1F</color>
+
+    <color name="ads_button_color">#FF9D1F</color>
+    <color name="colorAccent">#03dac5</color>
+    <color name="red">#ff003c</color>
+    <color name="colorWhite">#ffffff</color>
+
+    <color name="dallwhite">#8C8484</color>
+
+</resources>
